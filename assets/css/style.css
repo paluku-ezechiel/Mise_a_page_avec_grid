@@ -2,49 +2,44 @@ body {
   margin: 0;
   padding: 0;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr 1fr 1fr;
-  height: 100vh;
-  grid-template-areas: "header" "content" "side" "footer";
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 800;
-  color: white;
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100vh;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: "one one" "two three" "four four";
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-.container header {
-  background-color: green;
-  grid-area: header;
+header {
+    background-color: violet;
+    grid-area: one;
 }
 
 .content {
-  background-color: red;
-  grid-area: content;
+    background-color: brown;
+    grid-area: two;
 }
 
-.side {
-  background-color: yellow;
-  /* height: 200px; */
-  grid-area: side;
+aside {
+    background-color: blue;
+    grid-area: three;
 }
 
-.footer {
-  background-color: blue;
-  grid-area: footer;
+footer {
+    background-color: chocolate;
+    grid-area: four;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "header" "content" "side" "footer";
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 800;
-        color: white;
-        /* padding: 20px; */
-      }
-    
+        grid-template-areas: "one one" "two two" "three three" "four four";
+
+    }
 }
