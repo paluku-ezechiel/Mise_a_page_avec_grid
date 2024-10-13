@@ -39,7 +39,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas: "one one" "two two" "three three" "four four";
+        grid-template-areas: "one" "two" "three" "four";
 
     }
 }
